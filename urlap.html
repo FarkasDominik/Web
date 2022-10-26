@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urlap</title>
+</head>
+<body>
+  <p><a href="index.html">Főoldal</a></p>
+
+    <p>Név:</p>
+    <input type="text">
+
+    <p>Adja meg a jelszavát:</p>
+    <input type="password">
+
+    <p>Maga vonzodik más nemhez is:</p>
+    <input type="checkbox"> Igen...
+    <input type="checkbox"> Lehet...
+    <input type="checkbox"> Nem...
+
+    <p>Neme:</p>
+    <input type="radio" name="gender">Fiú
+    <input type="radio" name="gender">Lány
+
+    <p>Önéletrajz hozzáadása:</p>
+    <input type='file'>
+
+    <p>Adja meg az email címét:</p>
+    <input type='email'>
+
+    <p>Számlálo:</p>
+    <input type='number'>
+
+    <p>Mennyire szereti a Fradit:</p>
+       <input type='range'>
+
+    <p>Születési idö pontja:</p>
+    <input type='date'>
+
+    <p>Idö:</p>
+    <input type='time'>
+
+    <p>Kedvenc színe:</p>
+    <input type='color'>
+
+    <p>Írjon pár mondatot magárol:</p>
+    <textarea cols=40 rows=4></textarea>
+
+    <p>Kedvenc tantárgyad:</p>
+    <select>
+        <option>---Válassz!--- </option>
+        <option>Testnevelés     </option>
+        <option>Matek     </option>
+        <option>Magyar nyelv   </option>
+        <option>Informatika   </option>
+    </select>
+
+    <p>Válassz uticélt:</p>
+   <select>
+        <option disabled=disable selected>---Válassz!--- </option>
+    
+        <optgroup label='Portugália'>
+            <option>Lisabon</option>
+            <option>Porto</option>
+            <option>Amadora</option>
+        </optgroup>
+    
+        <optgroup label='Anglia'>
+            <option>London</option>
+            <option>Manchester</option>
+            <option>Bristol</option>
+        </optgroup>
+    
+        <optgroup label='Amerika'>
+            <option>Washington</option>
+            <option>New York</option>
+            <option>Los Angeles</option>
+        </optgroup>
+    </select>
+
+    <p>Kedvenc programozási nyelved:</p>
+    <input list='programnyelv'>
+    <datalist id='programnyelv'>
+        <option value='C#'>
+        <option value='Java'>
+        <option value='Html'>
+        <option value='Python'>
+    </datalist>
+<p></p>
+    <input type='reset'>
+
+    <input type='button' value='Feldolgozás'>
+
+    <input type='submit'>
+    
+</body>
+</html>
