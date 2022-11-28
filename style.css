@@ -1,5 +1,5 @@
 body {
-    background-color:greenyellow
+    background-color:rgb(90, 81, 174)
 }
 
 a{
@@ -9,5 +9,18 @@ a{
 .Active {
     color: blue;
 }
+
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #24262b;
+    color: white;
+  }
+
+
 
 
