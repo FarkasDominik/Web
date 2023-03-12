@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitagorasz</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap');
+
+        h1{
+            font-family: 'Noto Sans JP', sans-serif;
+        }
+
+        img{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pitagorasz tétel</h1>
+
+    <img src="pita.jpg" alt="Pitagorasz">
+    <form action="javascript:void(0)">
+        <fieldset>
+            <Legend>Pitagorasz Tétel</Legend>
+            <label for="a">a oldal</label>
+            <input type="text" name="pit" id="a" oninput="szam()">
+            <label for="b">b oldal</label>
+            <input type="text" name="pit" id="b" oninput="szam()">
+            <label for="c">c oldal</label>
+            <input type="text" name="pit" id="c" oninput="szam()">
+            <input type="button" value="Törlés" onclick="torol()">
+        </fieldset>
+    </form>
+
+    <script>
+        function szam () {
+            if (a.value != 0 && b.value != 0){
+                c.value = Math.sqrt ((a.value * a.value) + (b.value * b.value))
+            }
+            else if (a.value != 0 && c.value != 0){
+                    b.value = Math.sqrt ((a.value * a.value) + (c.value * c.value))
+            }
+            if (a.value != 0 && b.value != 0){
+                a.value = Math.sqrt ((b.value * b.value) + (c.value * c.value))        
+            }
+        }
+        function torol() {
+            a.value = "";
+            b.value = "";
+            c.value = "";
+        }   
+    </script>
+</body>
+</html>
